@@ -1,30 +1,29 @@
-# 🧹 Denoising and Signal Enhancement Notebook
+# 🧹 GAN-based Denoising Notebook (RDUNet + PatchDiscriminator)
 
-This repository contains a Jupyter Notebook dedicated to **denoising, filtering, and signal/image enhancement** tasks.  
-The notebook provides both theoretical explanations and hands-on implementations, making it useful for **students, researchers, and practitioners** working with noisy datasets.
+A research-oriented Jupyter Notebook for **learning-based denoising** with a **GAN** setup: an RDUNet **generator** paired with a **PatchDiscriminator**.  
+This repo demonstrates **noisy → clean** restoration using an **adversarial loss + L1 reconstruction loss**, with full training/validation loops, TensorBoard logging, checkpoints, and sample visualizations.
+
+
 
 ---
+## 🔑 Key Features
 
-## 📌 Features
 
-- **Noise Simulation**
-  - Add synthetic noise (Gaussian, Salt & Pepper, etc.) to signals/images.
-  - Compare the effects of different noise models.
 
-- **Denoising Methods**
-  - Classical filtering (moving average, Gaussian smoothing, Wiener filter).
-  - Frequency-domain approaches (FFT-based noise suppression).
-  - Advanced denoising (wavelet transform, sparse representations).
+- **Model Architecture**  
+  - **Generator:** RDUNet for image restoration.  
+  - **Discriminator:** PatchGAN to distinguish noisy vs. clean images.  
 
-- **Performance Evaluation**
-  - Signal-to-Noise Ratio (SNR) improvement.
-  - Peak Signal-to-Noise Ratio (PSNR).
-  - Structural Similarity Index (SSIM) for images.
+- **Training Setup**  
+  - Loss functions: Adversarial loss (BCE) + L1 reconstruction loss.  
+  - Optimizers: Adam for both Generator and Discriminator.  
+  - Full training/validation loop with checkpoints and sample outputs.  
 
-- **Visualization**
-  - Before vs. after denoising comparisons.
-  - Frequency spectrum analysis.
-  - Interactive plots for better understanding.
+- **Evaluation & Logging**  
+  - Metrics: PSNR and SSIM for image quality.  
+  - TensorBoard logging of losses (Generator, Discriminator, GAN, L1).  
+  - Visualization of noisy → denoised → clean results.  
+
 
 ---
 
@@ -32,23 +31,14 @@ The notebook provides both theoretical explanations and hands-on implementations
 
 ## 📊 Example Results
 
-| Noise Type        | Input Example | Denoised Output |
-|-------------------|---------------|-----------------|
-| Gaussian Noise    | ![noisy](docs/gaussian_noisy.png) | ![clean](docs/gaussian_denoised.png) |
-| Salt & Pepper     | ![noisy](docs/sp_noisy.png)       | ![clean](docs/sp_denoised.png) |
+| Input Example | Denoised Output |
+|---------------|-----------------|
+| ![noisy](docs/noisy.png) | ![clean](docs/denoised.png) |
 
-*(Add sample images in a `/docs` folder to make your README more attractive.)*
 
 ---
 
 
-
-## 📖 Applications
-
-- **Image Processing**: Removing noise from scanned documents, medical images, or photographs.
-- **Signal Processing**: Enhancing audio signals, sensor data, and experimental measurements.
-- **Machine Learning Preprocessing**: Cleaning datasets to improve model robustness.
-- **Research & Education**: Demonstrating denoising techniques in courses, projects, and experiments.
 
 ---
 
