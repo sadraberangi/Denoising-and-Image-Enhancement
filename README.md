@@ -117,5 +117,4 @@ If you have suggestions for new denoising techniques, optimizations, or visualiz
 
 ## 👤 Author
 
-Developed by **[Your Name]**  
-For questions or collaboration, please contact: `<your-email@example.com>`
+Developed by **Sadra Berangi**  
