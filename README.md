@@ -41,16 +41,7 @@ The notebook provides both theoretical explanations and hands-on implementations
 
 ---
 
-## 📂 Repository Structure
 
-```
-├── 48876668-7321-43be-8d2f-0b935ee7b640.ipynb   # Main notebook
-├── requirements.txt                             # Python dependencies (optional)
-├── docs/                                        # Store images/results for README
-└── README.md                                    # Project documentation
-```
-
----
 
 ## 📖 Applications
 
