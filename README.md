@@ -28,28 +28,7 @@ The notebook provides both theoretical explanations and hands-on implementations
 
 ---
 
-## 🚀 Getting Started
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
-```
-
-### 2. Install dependencies
-The notebook mainly uses **NumPy**, **Matplotlib**, and **scikit-image**. To install all requirements:
-```bash
-pip install -r requirements.txt
-```
-
-*(If `requirements.txt` is missing, simply open the notebook and install missing packages via `pip` inside the environment.)*
-
-### 3. Run the notebook
-```bash
-jupyter notebook 48876668-7321-43be-8d2f-0b935ee7b640.ipynb
-```
-
----
 
 ## 📊 Example Results
 
