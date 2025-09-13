@@ -1,7 +1,7 @@
 # 🧹 GAN-based Denoising Notebook (RDUNet + PatchDiscriminator)
 
 A research-oriented Jupyter Notebook for **learning-based denoising** with a **GAN** setup: an RDUNet **generator** paired with a **PatchDiscriminator**.  
-This repo demonstrates **noisy → clean** restoration using an **adversarial loss + L1 reconstruction loss**, with full training/validation loops, TensorBoard logging, checkpoints, and sample visualizations.
+This repo demonstrates **noisy → clean** restoration using an **adversarial loss + L1 reconstruction loss**, with full training/validation loops, and sample visualizations.
 
 
 
